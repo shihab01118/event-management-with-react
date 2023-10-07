@@ -6,13 +6,15 @@ import Contact from "../pages/Contact/Contact";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import Services from "../pages/Services/Services";
+import ServiceDetails from "../pages/Services/ServiceDetails";
+import ErrorPage from "../pages/Error/ErrorPage";
 
 
 const PublicRoutes = createBrowserRouter([
     {
         path: '/',
         element: <MainLayout></MainLayout>,
-        // errorElement: 
+        errorElement: <ErrorPage></ErrorPage> ,
         children: [
             {
                 path: '/',
@@ -23,6 +25,10 @@ const PublicRoutes = createBrowserRouter([
                 path: '/services',
                 element: <Services></Services>,
                 loader: () => fetch('/services.json')
+            },
+            {
+                path: '/service/:id',
+                element: <ServiceDetails></ServiceDetails>,
             },
             {
                 path: '/about',
