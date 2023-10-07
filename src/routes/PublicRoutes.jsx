@@ -27,8 +27,9 @@ const PublicRoutes = createBrowserRouter([
                 loader: () => fetch('/services.json')
             },
             {
-                path: '/service/:id',
+                path: '/service/:title',
                 element: <ServiceDetails></ServiceDetails>,
+                loader: () => fetch('/services.json')
             },
             {
                 path: '/about',
