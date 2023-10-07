@@ -5,6 +5,7 @@ import About from "../pages/About/About";
 import Contact from "../pages/Contact/Contact";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
+import Services from "../pages/Services/Services";
 
 
 const PublicRoutes = createBrowserRouter([
@@ -16,6 +17,10 @@ const PublicRoutes = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
+            },
+            {
+                path: '/services',
+                element: <Services></Services>
             },
             {
                 path: '/about',
