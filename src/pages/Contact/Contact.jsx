@@ -4,7 +4,9 @@ import { GoLocation } from "react-icons/go";
 
 const Contact = () => {
   return (
-    <div className="flex max-w-7xl mx-auto">
+    <div className="max-w-6xl mx-auto">
+        <h2 className="text-center mb-5">Contact Us</h2>
+      <div className="flex">
       <div className="w-1/2">
         <h2>Contact Information</h2>
         <div className="flex gap-4">
@@ -38,6 +40,7 @@ const Contact = () => {
         </div>
         <textarea placeholder="Your Message" rows="6" className="w-full border mt-5"></textarea>
         <button className="btn btn-neutral btn-outline">Send Message</button>
+      </div>
       </div>
     </div>
   );

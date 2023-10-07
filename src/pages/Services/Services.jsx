@@ -6,7 +6,7 @@ const Services = () => {
     const services = useLoaderData();
     // console.log(services);
     return (
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-3">
                 <div className="flex items-center justify-center"><h2>Explore Services</h2></div>
                 <div className="col-span-2">

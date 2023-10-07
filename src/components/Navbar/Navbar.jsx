@@ -59,24 +59,10 @@ const Navbar = () => {
           Contact
         </NavLink>
       </li>
-      <li>
-        <NavLink
-          to="/register"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "text-rose-600 font-semibold text-lg"
-              : "font-semibold text-lg"
-          }
-        >
-          Register
-        </NavLink>
-      </li>
     </>
   );
   return (
-    <div className="navbar lg:max-w-7xl mx-auto">
+    <div className="navbar lg:max-w-6xl mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
