@@ -1,9 +1,11 @@
+import Services from "../Services/Services";
 
 
 const Home = () => {
+    
     return (
-        <div>
-            this is home.
+        <div className="max-w-7xl mx-auto">
+            <Services></Services>
         </div>
     );
 };

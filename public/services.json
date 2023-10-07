@@ -1,35 +1,41 @@
 [
     {
+      "id": 1,
       "title": "Weddings",
       "image": "https://img.freepik.com/premium-photo/bride-beautiful-dress-groom-gray-suit-sitting-sofa-indoors-trendy-wedding-style_153585-127.jpg",
       "price": "$5,000 - $20,000",
       "description": "Your wedding day is a momentous occasion, and we are here to turn your dreams into reality. Our wedding planning services encompass every aspect of your special day. From selecting the perfect venue to designing breathtaking decor, crafting a delectable menu, and coordinating the finest details, we are dedicated to creating a magical and unforgettable wedding experience. Whether you envision an intimate gathering or a grand celebration, our team of experts will work closely with you to ensure that your wedding is a true reflection of your love and style. With our meticulous planning and attention to detail, your wedding day will be a joyous and stress-free event, allowing you to savor every moment with your loved ones."
     },
     {
+      "id": 2,
       "title": "Birthday Parties",
       "image": "https://img.freepik.com/premium-photo/cropped-photo-plate-with-birthday-cake-woman-s-hands_690749-658.jpg",
       "price": "$500 - $5,000",
       "description": "Every birthday is a milestone worth celebrating, and our birthday party planning services are designed to make your special day truly memorable. Whether you're planning an extravagant bash or an intimate gathering, we've got you covered. Our team of creative minds will work closely with you to curate a theme, select the perfect venue, and arrange all the details that make a birthday party extraordinary. From eye-catching decorations to delicious catering, entertainment, and personalized touches, we ensure that your birthday celebration is a fun and unforgettable experience for you and your guests."
     },
     {
+      "id": 3,
       "title": "Anniversaries",
       "image": "https://img.freepik.com/free-photo/let-s-celebrate-this-special-occasion_329181-5689.jpg",
       "price": "$1,000 - $10,000",
       "description": "Celebrate the enduring love and commitment you share with our anniversary event planning services. Whether you're marking a milestone anniversary or simply want to commemorate your love, we create elegant and romantic settings that capture the essence of your journey together. Our team specializes in designing anniversary events that reflect your unique story, with attention to every detail, from decor and ambiance to exquisite dining and entertainment. Let us create a timeless celebration that rekindles your love and creates cherished memories."
     },
     {
+      "id": 4,
       "title": "Engagement Parties",
       "image": "https://img.freepik.com/free-photo/groom-putting-ring-bride-s-finger_1157-338.jpg",
       "price": "$750 - $4,000",
       "description": "The journey to forever begins with an engagement, and we are here to help you kickstart it in style. Our engagement party planning services are tailored to reflect your love story and create a memorable celebration of your commitment. From selecting a captivating venue to coordinating theme-based decor, entertainment, and delectable catering, we infuse creativity into every aspect of your engagement party. It's a moment to cherish, and our team is dedicated to making it an unforgettable experience that sets the stage for your future together."
     },
     {
+      "id": 5,
       "title": "Retirement Parties",
       "image": "https://img.freepik.com/free-photo/happy-business-people-opening-bottle-champagne-while-celebrating-office-party_637285-9625.jpg",
       "price": "$1,200 - $6,000",
       "description": "Retirement marks the end of one chapter and the beginning of another. Celebrate your accomplishments and embrace the new adventures that await with our retirement party planning services. We design retirement parties that are both meaningful and enjoyable, paying tribute to your years of hard work and dedication. From selecting a venue that suits your style to arranging heartfelt speeches, entertainment, and delicious cuisine, we ensure that your retirement party is a fitting send-off. It's a moment to relax, reflect, and relish the company of friends and family."
     },
     {
+      "id": 6,
       "title": "Baby Shower",
       "image": "https://img.freepik.com/premium-photo/happy-woman-dark-haired-anticipating-woman-feeling-happy-event-agency-while-celebrating-best-day-her-life_259150-31788.jpg",
       "price": "$500 - $2,500",

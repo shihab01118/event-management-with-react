@@ -17,10 +17,12 @@ const PublicRoutes = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
+                loader: () => fetch('/services.json')
             },
             {
                 path: '/services',
-                element: <Services></Services>
+                element: <Services></Services>,
+                loader: () => fetch('/services.json')
             },
             {
                 path: '/about',
