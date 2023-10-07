@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Nat Reynolds",
+        "position": "Financial Director",
+        "image": "https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/20b72dd9d347529c80882425/happy-man-with-long-thick-ginger-beard-has-friendly-smile_273609-16616.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Celia Almeda",
+        "position": "Advertising Manager",
+        "image": "https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/bb4a3324cba15018a0c8e5ad/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction_176420-15187.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Frank Kinney",
+        "position": "Wedding Planner",
+        "image": "https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/2d3e149e710d5030b9e36a55/ddddddd.jpg"
+    }
+]
