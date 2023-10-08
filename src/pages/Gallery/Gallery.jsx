@@ -2,7 +2,7 @@
 
 const Gallery = () => {
     return (
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-8 md:mx-16 lg:mx-auto">
             
 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
     <div className="grid gap-4">

@@ -4,10 +4,10 @@ import { GoLocation } from "react-icons/go";
 
 const Contact = () => {
   return (
-    <div className="max-w-6xl mx-auto my-10">
-      <div className="flex">
-        <div className="w-1/2 space-y-4">
-          <h2 className="text-3xl font-bold">Contact Information</h2>
+    <div className="max-w-6xl mx-8 md:mx-16 lg:mx-auto my-10">
+      <div className="md:flex">
+        <div className="md:w-1/2 space-y-4">
+          <h2 className="text-3xl font-bold text-center md:text-left">Contact Information</h2>
           <div className="flex gap-4 items-center">
             <LiaHeadsetSolid className="text-3xl"></LiaHeadsetSolid>
             <div>
@@ -32,10 +32,10 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2">
-          <h2 className="text-3xl font-bold mb-2">Get In Touch</h2>
-          <p className="text-lg font-medium mb-4">
-            Ask any question, We{"'"}d love to here more from you.
+        <div className="md:w-1/2 mt-5 md:mt-0">
+          <h2 className="text-3xl font-bold mb-2 text-center md:text-left">Get In Touch</h2>
+          <p className="text-lg font-medium mb-4 text-center md:text-left">
+            Ask any question, We{"'"}d love to hear more from you.
           </p>
           <div className=" grid grid-cols-2 gap-5">
             <input
