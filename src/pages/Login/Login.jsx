@@ -1,10 +1,34 @@
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Login = () => {
+
+  const {signInUser} = useContext(AuthContext);
+  const location = useLocation();
+    const navigate = useNavigate();
+
+  const handleLogIn = e => {
+    e.preventDefault();
+    const form = new FormData(e.currentTarget);
+
+    const email = form.get("email");
+    const password = form.get("password");
+
+    signInUser(email, password)
+    .then(result => {
+        console.log(result.user);
+        // navigate after log in
+        navigate(location?.state ? location.state : '/');
+    })
+    .catch(error => {
+        console.error(error);
+    })
+  }
   return (
     <div className="max-w-lg mx-auto h-screen mt-6">
       <h1 className="text-5xl font-bold text-center">Login Now!</h1>
-      <form className="bg-base-200 p-8 shadow-lg rounded-lg mt-8">
+      <form onSubmit={handleLogIn} className="bg-base-200 p-8 shadow-lg rounded-lg mt-8">
         <div className="form-control">
           <label className="label">
             <span className="label-text">Email</span>
