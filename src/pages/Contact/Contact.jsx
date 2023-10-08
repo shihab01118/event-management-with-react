@@ -4,7 +4,7 @@ import { GoLocation } from "react-icons/go";
 
 const Contact = () => {
   return (
-    <div className="max-w-6xl mx-auto h-screen">
+    <div className="max-w-6xl mx-auto my-10">
       <div className="flex">
         <div className="w-1/2 space-y-4">
           <h2 className="text-3xl font-bold">Contact Information</h2>

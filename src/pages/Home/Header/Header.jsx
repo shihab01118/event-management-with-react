@@ -18,7 +18,7 @@ const Header = () => {
             <p className="mb-5">
             Turning ordinary gatherings into extraordinary events. Our passion is to design and deliver memorable moments tailored just for you.
             </p>
-            <button className="btn btn-primary">Get Started</button>
+            <button className="btn btn-primary">Explore More</button>
           </div>
         </div>
       </div>

@@ -11,14 +11,14 @@ const ServiceCard = ({ service }) => {
           {title}
         </h5>
         {description.length > 120 ? (
-          <p className="mb-3 font-normal text-gray-700">
+          <p className="mb-5 font-normal text-gray-700 text-justify">
             {description.slice(0, 120)}...
           </p>
         ) : (
-          <p className="mb-3 font-normal text-gray-700">{description}</p>
+          <p className="mb-5 font-normal text-gray-700 text-justify">{description}</p>
         )}
         <div className="flex justify-between items-center">
-          <p>{price}</p>
+          <p className="text-lg font-medium">{price}</p>
           <Link to={`/service/${title}`}>
             <button className="btn btn-neutral text-white capitalize font-semibold text-lg">
               View Details

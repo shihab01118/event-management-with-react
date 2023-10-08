@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="bg-gray-900 shadow">
-      <div className="max-w-7xl mx-auto py-10">
+      <div className="max-w-6xl mx-auto py-10">
         <div className="sm:flex sm:items-center sm:justify-between">
           <a
             href="https://flowbite.com/"
