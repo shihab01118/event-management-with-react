@@ -17,8 +17,8 @@ const TeamMember = ({ member }) => {
     >
       <img src={image} alt={`image of ${name}`} className="" />
       <div className="text-center p-5 space-y-4">
-        <h3 className="text-2xl font-bold">{name}</h3>
-        <p className="uppercase tracking-widest font-medium text-lg">
+      <h3 className="text-2xl font-semibold text-[#0B0B0B]">{name}</h3>
+        <p className="uppercase text-gray-500 tracking-widest font-medium text-lg">
           {position}
         </p>
         <div className="flex justify-center gap-3">

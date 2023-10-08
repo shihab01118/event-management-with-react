@@ -40,7 +40,7 @@ const Login = () => {
   };
   return (
     <div className="max-w-lg mx-8 md:mx-16 lg:mx-auto h-screen mt-6">
-      <h1 className="text-3xl md:text-4xl font-bold text-center">Login Now!</h1>
+      <h1 className="text-3xl md:text-4xl font-bold text-center text-[#0B0B0B]">Login Now!</h1>
       <form
         onSubmit={handleLogIn}
         className="bg-base-200 p-8 shadow-lg rounded-lg mt-8"
@@ -75,11 +75,11 @@ const Login = () => {
           </label>
         </div>
         <div className="form-control mt-4">
-          <button className="btn btn-primary">Login</button>
+          <button className="btn border-none bg-gradient-to-br from-[#DEBB50] to-[#B57F12] text-white font-semibold text-lg capitalize">Login</button>
         </div>
         <p className="mt-3">
           Don{"'"}t have an account?{" "}
-          <Link className="text-rose-600 underline" to="/register">
+          <Link className="text-transparent bg-clip-text bg-gradient-to-br from-[#DEBB50] to-[#B57F12] font-semibold text-lg" to="/register">
             Register
           </Link>
         </p>

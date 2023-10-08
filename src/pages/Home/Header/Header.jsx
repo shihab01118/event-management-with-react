@@ -40,7 +40,7 @@ const Header = () => {
                 "url(https://img.freepik.com/premium-photo/indian-wedding-gate-decoration-green-eucalyptus-background_221414-522.jpg)",
             }}
           >
-            <div className="hero-overlay bg-opacity-60"></div>
+            <div className="hero-overlay bg-opacity-50"></div>
             <div className="hero-content text-center text-neutral-content">
               <div className="max-w-md">
                 <h1 className="mb-5 text-5xl font-bold">
@@ -52,7 +52,7 @@ const Header = () => {
                 </p>
                 <button
                   onClick={() => navigate("/services")}
-                  className="btn btn-primary"
+                  className="btn border-none bg-gradient-to-br from-[#DEBB50] to-[#B57F12] text-white font-semibold text-lg capitalize"
                 >
                   Explore Services
                 </button>
@@ -68,7 +68,7 @@ const Header = () => {
                 "url(https://img.freepik.com/free-photo/young-joyful-friends-celebrating_23-2147652023.jpg)",
             }}
           >
-            <div className="hero-overlay bg-opacity-60"></div>
+            <div className="hero-overlay bg-opacity-50"></div>
             <div className="hero-content text-center text-neutral-content">
               <div className="max-w-md">
                 <h1 className="mb-5 text-5xl font-bold">
@@ -80,7 +80,7 @@ const Header = () => {
                 </p>
                 <button
                   onClick={() => navigate("/services")}
-                  className="btn btn-primary"
+                  className="btn border-none bg-gradient-to-br from-[#DEBB50] to-[#B57F12] text-white font-semibold text-lg capitalize"
                 >
                   Explore Services
                 </button>
@@ -108,7 +108,7 @@ const Header = () => {
                 </p>
                 <button
                   onClick={() => navigate("/services")}
-                  className="btn btn-primary"
+                  className="btn border-none bg-gradient-to-br from-[#DEBB50] to-[#B57F12] text-white font-semibold text-lg capitalize"
                 >
                   Explore Services
                 </button>
@@ -124,7 +124,7 @@ const Header = () => {
                 "url(https://img.freepik.com/premium-photo/romantic-luxury-evening-with-champagne-setting-with-two-glasses-rose-petails-candles_114830-84.jpg)",
             }}
           >
-            <div className="hero-overlay bg-opacity-60"></div>
+            <div className="hero-overlay bg-opacity-50"></div>
             <div className="hero-content text-center text-neutral-content">
               <div className="max-w-md">
                 <h1 className="mb-5 text-5xl font-bold">
@@ -136,7 +136,7 @@ const Header = () => {
                 </p>
                 <button
                   onClick={() => navigate("/services")}
-                  className="btn btn-primary"
+                  className="btn border-none bg-gradient-to-br from-[#DEBB50] to-[#B57F12] text-white font-semibold text-lg capitalize"
                 >
                   Explore Services
                 </button>
@@ -152,7 +152,7 @@ const Header = () => {
                 "url(https://img.freepik.com/free-photo/senior-people-celebrating-together_23-2149262275.jpg)",
             }}
           >
-            <div className="hero-overlay bg-opacity-60"></div>
+            <div className="hero-overlay bg-opacity-50"></div>
             <div className="hero-content text-center text-neutral-content">
               <div className="max-w-md">
                 <h1 className="mb-5 text-5xl font-bold">
@@ -164,7 +164,7 @@ const Header = () => {
                 </p>
                 <button
                   onClick={() => navigate("/services")}
-                  className="btn btn-primary"
+                  className="btn border-none bg-gradient-to-br from-[#DEBB50] to-[#B57F12] text-white font-semibold text-lg capitalize"
                 >
                   Explore Services
                 </button>
@@ -180,7 +180,7 @@ const Header = () => {
                 "url(https://img.freepik.com/free-photo/side-view-couple-gender-reveal-party_23-2150256652.jpg)",
             }}
           >
-            <div className="hero-overlay bg-opacity-60"></div>
+            <div className="hero-overlay bg-opacity-50"></div>
             <div className="hero-content text-center text-neutral-content">
               <div className="max-w-md">
                 <h1 className="mb-5 text-5xl font-bold">
@@ -192,7 +192,7 @@ const Header = () => {
                 </p>
                 <button
                   onClick={() => navigate("/services")}
-                  className="btn btn-primary"
+                  className="btn border-none bg-gradient-to-br from-[#DEBB50] to-[#B57F12] text-white font-semibold text-lg capitalize"
                 >
                   Explore Services
                 </button>
@@ -201,32 +201,6 @@ const Header = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-      {/* <div
-        className="hero h-[70vh] lg:h-screen"
-        style={{
-          backgroundImage:
-            "url(https://webredox.net/demo/wp/florya/wp-content/uploads/2022/11/1.jpg)",
-        }}
-      >
-        <div className="hero-overlay bg-opacity-60"></div>
-        <div className="hero-content text-center text-neutral-content">
-          <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold">
-              Elevate Your Occasions with Us
-            </h1>
-            <p className="mb-5">
-              Turning ordinary gatherings into extraordinary events. Our passion
-              is to design and deliver memorable moments tailored just for you.
-            </p>
-            <button
-              onClick={() => navigate("/services")}
-              className="btn btn-primary"
-            >
-              Explore Services
-            </button>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };

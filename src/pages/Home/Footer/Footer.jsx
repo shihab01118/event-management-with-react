@@ -3,10 +3,10 @@ const Footer = () => {
     <footer className="bg-gray-900 shadow">
       <div className="max-w-6xl mx-8 md:mx-16 lg:mx-auto py-10">
         <div className="sm:flex sm:items-center sm:justify-between">
-            <h2 className="text-center text-2xl text-gray-400 font-semibold">
+            <h2 className="text-center text-3xl text-transparent bg-clip-text bg-gradient-to-br from-[#DEBB50] to-[#B57F12] font-semibold">
               EVENTA
             </h2>
-          <ul className="flex justify-center flex-wrap items-center my-6 text-sm font-medium text-gray-500 sm:mb-0">
+          <ul className="flex justify-center flex-wrap items-center my-6 md:my-0 text-sm font-medium text-gray-500 sm:mb-0">
             <li>
               <a href="#" className="mr-4 hover:underline md:mr-6 ">
                 About
@@ -33,7 +33,7 @@ const Footer = () => {
         <span className="block text-sm text-gray-500 text-center">
           © 2023{" "}
           <a href="#" className="hover:underline">
-            EVENTA™
+            EVENTA
           </a>
           . All Rights Reserved.
         </span>

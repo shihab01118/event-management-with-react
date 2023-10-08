@@ -57,7 +57,7 @@ const Register = () => {
 
   return (
     <div className="max-w-lg mx-8 md:mx-16 lg:mx-auto min-h-screen my-6">
-      <h1 className="text-3xl md:text-4xl font-bold text-center">Register Here</h1>
+      <h1 className="text-3xl md:text-4xl font-bold text-center text-[#0B0B0B]">Register Here</h1>
       <form
         onSubmit={handleRegister}
         className="bg-base-200 p-8 shadow-lg rounded-lg mt-8"
@@ -112,11 +112,11 @@ const Register = () => {
           />
         </div>
         <div className="form-control mt-4">
-          <button className="btn btn-primary">Register</button>
+          <button className="btn border-none bg-gradient-to-br from-[#DEBB50] to-[#B57F12] text-white font-semibold text-lg capitalize">Register</button>
         </div>
         <p className="mt-3">
           Already have an account?{" "}
-          <Link className="text-rose-600 underline" to="/login">
+          <Link className="text-transparent bg-clip-text bg-gradient-to-br from-[#DEBB50] to-[#B57F12] font-semibold text-lg" to="/login">
             Login
           </Link>
         </p>

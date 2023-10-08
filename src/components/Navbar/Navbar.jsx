@@ -15,8 +15,8 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "text-rose-600 font-semibold text-lg"
-              : "font-semibold text-lg"
+              ? "text-transparent bg-clip-text bg-gradient-to-br from-[#DEBB50] to-[#B57F12] font-semibold text-lg"
+              : "font-semibold text-lg text-gray-500"
           }
         >
           Home
@@ -29,8 +29,8 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "text-rose-600 font-semibold text-lg"
-              : "font-semibold text-lg"
+              ? "text-transparent bg-clip-text bg-gradient-to-br from-[#DEBB50] to-[#B57F12] font-semibold text-lg"
+              : "font-semibold text-lg text-gray-500"
           }
         >
           Services
@@ -43,8 +43,8 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "text-rose-600 font-semibold text-lg"
-              : "font-semibold text-lg"
+              ? "text-transparent bg-clip-text bg-gradient-to-br from-[#DEBB50] to-[#B57F12] font-semibold text-lg"
+              : "font-semibold text-lg text-gray-500"
           }
         >
           Gallery
@@ -57,8 +57,8 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "text-rose-600 font-semibold text-lg"
-              : "font-semibold text-lg"
+              ? "text-transparent bg-clip-text bg-gradient-to-br from-[#DEBB50] to-[#B57F12] font-semibold text-lg"
+              : "font-semibold text-lg text-gray-500"
           }
         >
           About
@@ -71,8 +71,8 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "text-rose-600 font-semibold text-lg"
-              : "font-semibold text-lg"
+              ? "text-transparent bg-clip-text bg-gradient-to-br from-[#DEBB50] to-[#B57F12] font-semibold text-lg"
+              : "font-semibold text-lg text-gray-500"
           }
         >
           Contact
@@ -118,7 +118,10 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <Link to="/" className="text-3xl font-bold">
+        <Link
+          to="/"
+          className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-[#DEBB50] to-[#B57F12]"
+        >
           EVENTA
         </Link>
       </div>
@@ -132,12 +135,12 @@ const Navbar = () => {
           </div>
         </label>
         {user ? (
-          <button onClick={handleSignOut} className="btn">
+          <button onClick={handleSignOut} className="text-lg md:text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-br from-[#DEBB50] to-[#B57F12]">
             Sign Out
           </button>
         ) : (
           <Link to="/login">
-            <button className="btn">Login</button>
+            <button className="text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-br from-[#DEBB50] to-[#B57F12]">Login</button>
           </Link>
         )}
       </div>

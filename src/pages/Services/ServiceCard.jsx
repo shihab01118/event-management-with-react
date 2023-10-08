@@ -18,7 +18,7 @@ const ServiceCard = ({ service }) => {
     >
       <img className="rounded-t-lg" src={image} alt="" />
       <div className="p-5">
-        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+        <h5 className="mb-2 text-2xl font-semibold tracking-tight text-[#0B0B0B]">
           {title}
         </h5>
         {description.length > 120 ? (
@@ -31,25 +31,10 @@ const ServiceCard = ({ service }) => {
           </p>
         )}
         <div className="flex justify-between items-center">
-          <p className="text-lg font-medium">{price}</p>
+          <p className="text-lg font-medium text-gray-500">{price}</p>
           <Link to={`/service/${title}`}>
-            <button className="btn btn-neutral text-white capitalize font-semibold text-lg">
+            <button className="btn bg-gradient-to-r from-[#DEBB50] to-[#B57F12] text-white font-semibold text-lg capitalize">
               View Details
-              <svg
-                className="w-3.5 h-3.5 ml-2"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
             </button>
           </Link>
         </div>

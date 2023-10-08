@@ -20,7 +20,7 @@ console.log(greetign);
 
 #### Answer: B.
 
-<i>Write your explanation here</i>
+<i>In the first line there is a variable "greeting" declared but it's value is not assigned. In the second line "greetign" is assigned with an empty object but it is never declared. So there will an error occur while consoling "greetign" in the third line. The error is RefferenceError</i>
 
 </p>
 </details>
@@ -43,9 +43,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C.
 
-<i>Write your explanation here</i>
+<i>There is a function declared. It recieves two parameters and it performs addition of that two parameters. The function is called later with two parameters. The first one is integer and the second one is string. In JavaScript, the + operator can be used for both addition and string concatenation. When one or both of the operands are strings, the + operator concatenates them. So the result will be 12.</i>
 
 </p>
 </details>
@@ -69,9 +69,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A.
 
-<i>Write your explanation here</i>
+<i>In the first line there is declared an array named "food". In the second line an object is declared named "info" with the property "favouriteFood" assigned the value of the 1st element of "food" array. After that the value of "favouriteFood" is changed. But in javascript array doesn't change by refference. So the food array will remain unchanged.</i>
 
 </p>
 </details>
@@ -94,9 +94,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B.
 
-<i>Write your explanation here</i>
+<i>There is a function declared named "sayHi" which recieves one parameter. Later it is called without any parameter. So the parameter was undefined when the function was called. So the answer will be "Hi there, undefined"</i>
 
 </p>
 </details>
@@ -122,9 +122,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B.
 
-<i>Write your explanation here</i>
+<i>In js, 0 is considered as falsy value. The count is 0 initially. Then there is an array with 4 numbers. Then forEach loop is iterated on "nums" array. In this loop there is an if statement which checks the value is truthy. Since 0 is a falsy value, so the first iteration will be rejected and the count will remain 0. After that all the iteration will pass through and the final count value will be 3.</i>
 
 </p>
 </details>
