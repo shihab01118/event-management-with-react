@@ -2,9 +2,10 @@ import toast from "react-hot-toast";
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import { FaFacebook, FaGoogle } from "react-icons/fa";
 
 const Register = () => {
-  const { createUser, updateUserProfile } = useContext(AuthContext);
+  const { createUser, updateUserProfile, googleSignIn } = useContext(AuthContext);
   const [registerError, setRegisterError] = useState("");
 
   const handleRegister = (e) => {
@@ -43,8 +44,19 @@ const Register = () => {
         console.error(error.message);
       });
   };
+
+  const handleGoogleSignIN = () => {
+    googleSignIn()
+      .then((result) => {
+        console.log(result.user);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+
   return (
-    <div className="max-w-lg mx-auto h-screen mt-6">
+    <div className="max-w-lg mx-auto min-h-screen mt-6">
       <h1 className="text-5xl font-bold text-center">Register Here</h1>
       <form
         onSubmit={handleRegister}
@@ -108,6 +120,23 @@ const Register = () => {
             Login
           </Link>
         </p>
+        <div>
+          <div className="relative flex py-5 items-center">
+            <div className="flex-grow border-t border-gray-400"></div>
+            <span className="flex-shrink mx-4">Continue With</span>
+            <div className="flex-grow border-t border-gray-400"></div>
+          </div>
+          <div className="grid grid-cols-2 gap-5 mt-3">
+            <button onClick={handleGoogleSignIN} className="btn btn-outline">
+              <FaGoogle></FaGoogle>
+              Google
+            </button>
+            <button className="btn btn-outline">
+              <FaFacebook className="text-blue-600"></FaFacebook>
+              Facebook
+              </button>
+          </div>
+        </div>
       </form>
     </div>
   );

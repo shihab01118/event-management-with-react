@@ -2,9 +2,10 @@ import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import toast from "react-hot-toast";
+import { FaFacebook, FaGoogle } from 'react-icons/fa';
 
 const Login = () => {
-  const { signInUser } = useContext(AuthContext);
+  const { signInUser, googleSignIn } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -24,7 +25,17 @@ const Login = () => {
       })
       .catch((error) => {
         console.error(error.message);
-        toast.error("Invalid email or password")
+        toast.error("Invalid email or password");
+      });
+  };
+
+  const handleGoogleSignIN = () => {
+    googleSignIn()
+      .then((result) => {
+        console.log(result.user);
+      })
+      .catch((error) => {
+        console.error(error);
       });
   };
   return (
@@ -72,6 +83,23 @@ const Login = () => {
             Register
           </Link>
         </p>
+        <div>
+          <div className="relative flex py-5 items-center">
+            <div className="flex-grow border-t border-gray-400"></div>
+            <span className="flex-shrink mx-4">Continue With</span>
+            <div className="flex-grow border-t border-gray-400"></div>
+          </div>
+          <div className="grid grid-cols-2 gap-5 mt-3">
+            <button onClick={handleGoogleSignIN} className="btn btn-outline">
+              <FaGoogle></FaGoogle>
+              Google
+            </button>
+            <button className="btn btn-outline">
+              <FaFacebook className="text-blue-600"></FaFacebook>
+              Facebook
+              </button>
+          </div>
+        </div>
       </form>
     </div>
   );

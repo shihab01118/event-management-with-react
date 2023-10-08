@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
-import avatar from '../../assets/user.png'
+import avatar from "../../assets/user.png";
 
 const Navbar = () => {
-  const {user, logOut} = useContext(AuthContext)
+  const { user, logOut } = useContext(AuthContext);
   // console.log( user.photoURL);
 
   const navLinks = (
@@ -35,6 +35,20 @@ const Navbar = () => {
           }
         >
           Services
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/gallery"
+          className={({ isActive, isPending }) =>
+            isPending
+              ? "pending"
+              : isActive
+              ? "text-rose-600 font-semibold text-lg"
+              : "font-semibold text-lg"
+          }
+        >
+          Gallery
         </NavLink>
       </li>
       <li>
@@ -70,13 +84,13 @@ const Navbar = () => {
 
   const handleSignOut = () => {
     logOut()
-    .then(res => {
-      console.log(res);
-    })
-    .catch(err => {
-      console.error(err);
-    })
-  }
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  };
 
   return (
     <div className="navbar lg:max-w-6xl mx-auto py-6">
@@ -113,13 +127,15 @@ const Navbar = () => {
         <ul className="flex gap-8">{navLinks}</ul>
       </div>
       <div className="navbar-end">
-      <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+        <label tabIndex={0} className="avatar mr-3">
           <div className="w-10 rounded-full">
             {user ? <img src={user.photoURL} /> : <img src={avatar} />}
           </div>
         </label>
         {user ? (
-          <button onClick={handleSignOut} className="btn">Sign Out</button>
+          <button onClick={handleSignOut} className="btn">
+            Sign Out
+          </button>
         ) : (
           <Link to="/login">
             <button className="btn">Login</button>
