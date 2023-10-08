@@ -1,6 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import Navbar from "../../../components/Navbar/Navbar";
 
 const Header = () => {
+
+  const navigate = useNavigate()
+
   return (
     <div>
       <Navbar></Navbar>
@@ -18,7 +22,7 @@ const Header = () => {
             <p className="mb-5">
             Turning ordinary gatherings into extraordinary events. Our passion is to design and deliver memorable moments tailored just for you.
             </p>
-            <button className="btn btn-primary">Explore More</button>
+            <button onClick={()=> navigate("/services")} className="btn btn-primary">Explore Services</button>
           </div>
         </div>
       </div>

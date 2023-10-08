@@ -1,10 +1,21 @@
 import { Link } from "react-router-dom";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
+
 
 const ServiceCard = ({ service }) => {
   const { title, image, price, description } = service || {};
   return (
-    <div className="bg-white border border-gray-200 rounded-lg shadow">
+    <div
+      className="bg-white border border-gray-200 rounded-lg shadow"
+      data-aos="flip-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="1000"
+    >
       <img className="rounded-t-lg" src={image} alt="" />
       <div className="p-5">
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
@@ -15,7 +26,9 @@ const ServiceCard = ({ service }) => {
             {description.slice(0, 120)}...
           </p>
         ) : (
-          <p className="mb-5 font-normal text-gray-700 text-justify">{description}</p>
+          <p className="mb-5 font-normal text-gray-700 text-justify">
+            {description}
+          </p>
         )}
         <div className="flex justify-between items-center">
           <p className="text-lg font-medium">{price}</p>
@@ -46,7 +59,7 @@ const ServiceCard = ({ service }) => {
 };
 
 ServiceCard.propTypes = {
-    service: PropTypes.object,
-}
+  service: PropTypes.object,
+};
 
 export default ServiceCard;
