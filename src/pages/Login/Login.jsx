@@ -23,7 +23,8 @@ const Login = () => {
         navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
-        console.error(error);
+        console.error(error.message);
+        toast.error("Invalid email or password")
       });
   };
   return (

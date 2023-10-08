@@ -1,30 +1,47 @@
-import toast from 'react-hot-toast';
-import { useContext } from "react";
+import toast from "react-hot-toast";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 
 const Register = () => {
   const { createUser, updateUserProfile } = useContext(AuthContext);
-  
+  const [registerError, setRegisterError] = useState("");
+
   const handleRegister = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
 
     // get form value
-    const name= form.get('name');
-    const img= form.get('img');
+    const name = form.get("name");
+    const img = form.get("img");
     const email = form.get("email");
     const password = form.get("password");
 
+    setRegisterError("");
+
+    // password validation
+    if (
+      !/^(?=.*[A-Z])(?=.*[!@#$%^&*()_+{}[\]:;<>,.?~\\-]).{6,}$/.test(password)
+    ) {
+      setRegisterError("Password is not valid.");
+      toast.error(
+        "Password must contain 6 characters, one capital letter and a special character."
+      );
+      return;
+    }
+
     // create user
     createUser(email, password)
-    .then(result => {
-      console.log(result.user);
-      toast.success('Registration Successful!')
+      .then((result) => {
+        console.log(result.user);
+        toast.success("Registration Successful!");
 
-      updateUserProfile(name, img)
-    })
-    .catch();
+        // update user profile
+        updateUserProfile(name, img);
+      })
+      .catch((error) => {
+        console.error(error.message);
+      });
   };
   return (
     <div className="max-w-lg mx-auto h-screen mt-6">
@@ -33,6 +50,7 @@ const Register = () => {
         onSubmit={handleRegister}
         className="bg-base-200 p-8 shadow-lg rounded-lg mt-8"
       >
+        <p className="text-red-600">{registerError}</p>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Name</span>
