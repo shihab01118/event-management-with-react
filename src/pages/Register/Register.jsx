@@ -1,10 +1,10 @@
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 
 const Register = () => {
-  const { createUser } = useContext(AuthContext);
+  const { createUser, updateUserProfile } = useContext(AuthContext);
   
   const handleRegister = (e) => {
     e.preventDefault();
@@ -21,6 +21,8 @@ const Register = () => {
     .then(result => {
       console.log(result.user);
       toast.success('Registration Successful!')
+
+      updateUserProfile(name, img)
     })
     .catch();
   };
@@ -89,7 +91,6 @@ const Register = () => {
           </Link>
         </p>
       </form>
-      <Toaster />
     </div>
   );
 };

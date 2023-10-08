@@ -5,6 +5,7 @@ import avatar from '../../assets/user.png'
 
 const Navbar = () => {
   const {user, logOut} = useContext(AuthContext)
+  // console.log( user.photoURL);
 
   const navLinks = (
     <>
@@ -114,7 +115,7 @@ const Navbar = () => {
       <div className="navbar-end">
       <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
           <div className="w-10 rounded-full">
-            <img src={avatar} />
+            {user ? <img src={user.photoURL} /> : <img src={avatar} />}
           </div>
         </label>
         {user ? (
