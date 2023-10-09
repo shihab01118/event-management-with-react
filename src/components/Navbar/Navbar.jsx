@@ -15,8 +15,8 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "text-transparent bg-clip-text bg-gradient-to-br from-[#DEBB50] to-[#B57F12] font-semibold text-lg"
-              : "font-semibold text-lg text-gray-500"
+              ? "text-transparent bg-clip-text bg-gradient-to-br from-[#DEBB50] to-[#B57F12] font-medium text-lg"
+              : "font-medium text-lg text-gray-500"
           }
         >
           Home
@@ -29,8 +29,8 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "text-transparent bg-clip-text bg-gradient-to-br from-[#DEBB50] to-[#B57F12] font-semibold text-lg"
-              : "font-semibold text-lg text-gray-500"
+              ? "text-transparent bg-clip-text bg-gradient-to-br from-[#DEBB50] to-[#B57F12] font-medium text-lg"
+              : "font-medium text-lg text-gray-500"
           }
         >
           Services
@@ -43,8 +43,8 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "text-transparent bg-clip-text bg-gradient-to-br from-[#DEBB50] to-[#B57F12] font-semibold text-lg"
-              : "font-semibold text-lg text-gray-500"
+              ? "text-transparent bg-clip-text bg-gradient-to-br from-[#DEBB50] to-[#B57F12] font-medium text-lg"
+              : "font-medium text-lg text-gray-500"
           }
         >
           Gallery
@@ -57,8 +57,8 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "text-transparent bg-clip-text bg-gradient-to-br from-[#DEBB50] to-[#B57F12] font-semibold text-lg"
-              : "font-semibold text-lg text-gray-500"
+              ? "text-transparent bg-clip-text bg-gradient-to-br from-[#DEBB50] to-[#B57F12] font-medium text-lg"
+              : "font-medium text-lg text-gray-500"
           }
         >
           VIP Events
@@ -71,8 +71,8 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "text-transparent bg-clip-text bg-gradient-to-br from-[#DEBB50] to-[#B57F12] font-semibold text-lg"
-              : "font-semibold text-lg text-gray-500"
+              ? "text-transparent bg-clip-text bg-gradient-to-br from-[#DEBB50] to-[#B57F12] font-medium text-lg"
+              : "font-medium text-lg text-gray-500"
           }
         >
           Contact
@@ -126,13 +126,13 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="flex gap-8">{navLinks}</ul>
+        <ul className="flex gap-6">{navLinks}</ul>
       </div>
       <div className="navbar-end">
       <div>
           {user && <p className="text-gray-700 hidden md:block">{user.displayName}</p>}
         </div>
-        <label tabIndex={0} className="avatar mx-3">
+        <label tabIndex={0} className="avatar mx-2">
           <div className="w-8 rounded-full">
             {user && <img src={user.photoURL} />}
           </div>
