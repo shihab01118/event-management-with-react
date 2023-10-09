@@ -129,8 +129,11 @@ const Navbar = () => {
         <ul className="flex gap-8">{navLinks}</ul>
       </div>
       <div className="navbar-end">
-        <label tabIndex={0} className="avatar mr-3">
-          <div className="w-10 rounded-full">
+      <div>
+          {user && <p>{user.displayName}</p>}
+        </div>
+        <label tabIndex={0} className="avatar mx-3">
+          <div className="w-8 rounded-full">
             {user && <img src={user.photoURL} />}
           </div>
         </label>
