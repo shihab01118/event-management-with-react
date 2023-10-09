@@ -1,11 +1,15 @@
 import { useLoaderData } from "react-router-dom";
 import EventCard from "./EventCard";
+import { Helmet } from "react-helmet-async";
 
 const VIPEvents = () => {
     const vipEvents = useLoaderData();
     console.log(vipEvents);
   return (
     <div className="max-w-6xl mx-8 md:mx-16 lg:mx-auto py-8">
+      <Helmet>
+        <title>EVENTA | VIP Events</title>
+      </Helmet>
       <h2 className="text-3xl md:text-4xl text-[#0B0B0B] font-bold text-center mb-6 md:mb-0">
         Join Our VIP Events
       </h2>

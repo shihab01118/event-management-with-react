@@ -1,8 +1,11 @@
 import { LiaHeadsetSolid } from "react-icons/lia";
 import { TfiEmail } from "react-icons/tfi";
 import { GoLocation } from "react-icons/go";
+import { Helmet } from "react-helmet-async";
+import { useLocation } from "react-router-dom";
 
 const Contact = () => {
+  const location = useLocation()
   return (
     <section 
     className="md:h-[calc(100vh-84px)]"
@@ -11,6 +14,11 @@ const Contact = () => {
           "url(https://preview.colorlib.com/theme/wed/assets/img/gallery/section_bg1.png.webp)",
       }}
     >
+      <Helmet>
+        {
+          location.pathname === "/contact" && <title>EVENTA | Contact</title>
+        }
+      </Helmet>
       <div className="max-w-6xl mx-8 md:mx-16 lg:mx-auto py-14">
         <div className="md:flex">
           <div className="md:w-1/2 space-y-4">

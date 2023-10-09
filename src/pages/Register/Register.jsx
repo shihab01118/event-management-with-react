@@ -2,6 +2,7 @@ import toast from "react-hot-toast";
 import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
   const { createUser, updateUserProfile, logOut } = useContext(AuthContext);
@@ -50,7 +51,10 @@ const Register = () => {
           "url(https://preview.colorlib.com/theme/wed/assets/img/gallery/section_bg1.png.webp)",
       }}
     >
-      <div className="max-w-lg mx-8 md:mx-16 lg:mx-auto h-[calc(100vh-84px)] pt-6">
+      <Helmet>
+        <title>EVENTA | Register</title>
+      </Helmet>
+      <div className="max-w-lg mx-8 md:mx-16 lg:mx-auto min:h-[calc(100vh-84px)] py-6">
         <h1 className="text-3xl md:text-4xl font-bold text-center text-[#0B0B0B]">
           Register Here
         </h1>
