@@ -9,6 +9,7 @@ import ServiceDetails from "../pages/Services/ServiceDetails";
 import ErrorPage from "../pages/Error/ErrorPage";
 import PrivateRoute from "./PrivateRoute";
 import Gallery from "../pages/Gallery/Gallery";
+import VIPEvents from "../pages/VIPEvents/VIPEvents";
 
 const PublicRoutes = createBrowserRouter([
   {
@@ -42,6 +43,15 @@ const PublicRoutes = createBrowserRouter([
             <Gallery></Gallery>
           </PrivateRoute>
         ),
+      },
+      {
+        path: "/vip_events",
+        element: (
+          <PrivateRoute>
+            <VIPEvents></VIPEvents>
+          </PrivateRoute>
+        ),
+        loader: () => fetch("/vipEvents.json"),
       },
       {
         path: "/contact",

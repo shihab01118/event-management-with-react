@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "eventName": "Gala Charity Auction",
+        "date": "2023-11-15",
+        "time": "19:00 - 23:00",
+        "venue": "The Grand Ballroom",
+        "description": "An exclusive evening of charity and elegance, featuring live auctions and celebrity guests.",
+        "ticketPrice": "$500",
+        "cover": "https://img.freepik.com/free-photo/male-business-executive-receiving-award_107420-63805.jpg"
+    },
+    {
+        "id": 2,
+        "eventName": "VIP Music Festival",
+        "date": "2023-12-02",
+        "time": "15:00 - 23:59",
+        "venue": "Festival Grounds",
+        "description": "A music extravaganza with top artists, gourmet food, and VIP lounges.",
+        "ticketPrice": "$1000",
+        "cover": "https://img.freepik.com/premium-photo/just-having-fun-group-beautiful-young-people-throwing-colorful-confetti-while-dancing-looking-happy_425904-17831.jpg"
+    },
+    {
+        "id": 3,
+        "eventName": "Exclusive Fashion Show",
+        "date": "2024-01-20",
+        "time": "18:30 - 22:00",
+        "venue": "Fashion Plaza",
+        "description": "An evening of high fashion, runway glamour, and renowned designers.",
+        "ticketPrice": "$750",
+        "cover": "https://img.freepik.com/premium-photo/models-wearing-fashions-young-people-walk-along-runway-fashion-show_124507-42113.jpg"
+    },
+    {
+        "id": 4,
+        "eventName": "Private Wine Tasting",
+        "date": "2024-02-10",
+        "time": "19:30 - 21:30",
+        "venue": "Vineyard Estate",
+        "description": "Savor the finest wines in an intimate setting, guided by master sommeliers.",
+        "ticketPrice": "$250",
+        "cover": "https://img.freepik.com/free-photo/restaurant-sommelier_1098-15548.jpg"
+    },
+    {
+        "id": 5,
+        "eventName": "VIP Movie Premiere",
+        "date": "2024-03-05",
+        "time": "20:00 - 23:00",
+        "venue": "Red Carpet Theater",
+        "description": "Be among the first to watch a blockbuster movie and enjoy gourmet popcorn.",
+        "ticketPrice": "$800",
+        "cover": "https://img.freepik.com/free-photo/young-women-men-spending-free-time-cinema-together_7502-9334.jpg"
+    },
+    {
+        "id": 6,
+        "eventName": "Yacht Party Extravaganza",
+        "date": "2024-04-18",
+        "time": "16:00 - 21:00",
+        "venue": "Luxury Yacht",
+        "description": "Cruise along the coast, dance to live DJs, and indulge in a seafood buffet.",
+        "ticketPrice": "$1200",
+        "cover": "https://img.freepik.com/premium-photo/group-friends-making-party-yacht_186382-1768.jpg"
+    },
+    {
+        "id": 7,
+        "eventName": "VIP Comedy Night",
+        "date": "2024-05-08",
+        "time": "20:00 - 22:30",
+        "venue": "The Comedy Club",
+        "description": "Laugh out loud with top comedians, with exclusive seating and gourmet snacks.",
+        "ticketPrice": "$600",
+        "cover": "https://img.freepik.com/premium-photo/front-view-man-working-as-ventriloquist_52683-127496.jpg"
+    },
+    {
+        "id": 8,
+        "eventName": "Art Gallery Soiree",
+        "date": "2024-06-12",
+        "time": "17:00 - 19:30",
+        "venue": "Art Museum",
+        "description": "An intimate evening of fine art, wine, and conversation with renowned artists.",
+        "ticketPrice": "$900",
+        "cover": "https://img.freepik.com/premium-photo/people-visiting-modern-art-gallery_274679-32257.jpg"
+    },
+    {
+        "id": 9,
+        "eventName": "Private Poker Tournament",
+        "date": "2024-07-25",
+        "time": "19:30 - 23:00",
+        "venue": "Poker Palace",
+        "description": "Test your poker skills against the best in an exclusive tournament.",
+        "ticketPrice": "$500",
+        "cover": "https://img.freepik.com/premium-photo/shuffling-playing-cards-by-hands-croupier-dealer-poker-club-casino-game-concept-green-table-with-playing-chips_192985-4443.jpg"
+    }
+]
