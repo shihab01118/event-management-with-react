@@ -9,3 +9,9 @@
 - [x] As we mentioned earlier, it is a social event management based website. Our members always try to focus on giving the best services. Event services we provide: Wedding, Birthday Parties, Anniversaries, Engagement Parties, Retirement Parties, Baby Shower.   
 ## 5. Impressive User Experience:
 - [x] We provide you a responsive layout of our website by which you can easily access our website from any device. We also tried to create a user friendly interface in the website. 
+  
+<br>
+<br>
+
+# Live Preview Link: 
+    https://eventa-auth.web.app/register
