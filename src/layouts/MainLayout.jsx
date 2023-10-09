@@ -8,7 +8,7 @@ const MainLayout = () => {
   const location = useLocation();
 
   return (
-    <div>
+    <div className="font-poppins">
       <Toaster />
       {location.pathname === "/" ? <Header></Header> : <Navbar></Navbar>}
       <Outlet></Outlet>
