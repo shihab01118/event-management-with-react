@@ -14,4 +14,4 @@
 <br>
 
 # Live Preview Link: 
-    https://eventa-auth.web.app/register
+    https://eventa-auth.web.app/
